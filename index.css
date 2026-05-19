@@ -268,12 +268,13 @@ header.scrolled {
 .logo-link {
   display: flex;
   align-items: center;
-  gap: 0.75rem;
+  gap: 0.6rem;
   text-decoration: none;
   color: var(--text-primary);
   font-family: var(--font-title);
   font-weight: 800;
-  font-size: 1.35rem;
+  font-size: 1.2rem;
+  flex-shrink: 0;
 }
 
 .logo-icon-container {
@@ -283,8 +284,8 @@ header.scrolled {
 }
 
 .header-logo-gevision {
-  width: 26px;
-  height: 26px;
+  width: 24px;
+  height: 24px;
   object-fit: cover;
   border-radius: 50%;
   border: 1.5px solid rgba(255, 255, 255, 0.25);
@@ -310,7 +311,7 @@ header.scrolled {
 
 .nav-menu {
   display: flex;
-  gap: 2rem;
+  gap: 1.25rem;
   list-style: none;
   align-items: center;
 }
@@ -2061,9 +2062,7 @@ footer {
     grid-template-columns: 1fr;
     gap: 2.5rem;
   }
-}
 
-@media (max-width: 768px) {
   .nav-menu {
     position: fixed;
     top: 78px;
@@ -2074,7 +2073,7 @@ footer {
     padding: 1.25rem;
     border: 1px solid var(--border-glass);
     border-radius: 18px;
-    background: rgba(2, 6, 23, 0.92);
+    background: rgba(2, 6, 23, 0.95);
     backdrop-filter: blur(18px);
     -webkit-backdrop-filter: blur(18px);
     box-shadow: var(--shadow-premium);
@@ -2098,6 +2097,9 @@ footer {
   .mobile-nav-toggle {
     display: inline-flex;
   }
+}
+
+@media (max-width: 768px) {
   
   .form-wrapper,
   .donation-form {
