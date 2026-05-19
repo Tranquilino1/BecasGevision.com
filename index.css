@@ -276,15 +276,35 @@ header.scrolled {
   font-size: 1.35rem;
 }
 
+.logo-icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-logo-gevision {
+  width: 26px;
+  height: 26px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 1.5px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+  transition: var(--transition-smooth);
+}
+
+.header-logo-gevision:hover {
+  transform: scale(1.1);
+}
+
 .logo-icon {
-  background: linear-gradient(135deg, var(--gold) 0%, #d97706 100%);
+  background: linear-gradient(135deg, var(--gold) 0%, #0033cc 100%);
   width: 38px;
   height: 38px;
   border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #000;
+  color: #fff;
   box-shadow: 0 4px 15px var(--gold-glow);
 }
 
